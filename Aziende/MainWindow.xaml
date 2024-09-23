@@ -7,8 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TreeView BorderBrush="Black" BorderThickness="5" Name="trvAziende"> 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="6.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Center">Gestione File Xml</TextBlock>
+        <StackPanel HorizontalAlignment="Center" Grid.Row="0" Orientation="Horizontal" Grid.Column="1">
+            <Label>Inserire Nome File:</Label>
+            <TextBox Name="tbxName" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" Width="200" Margin="20, 0"></TextBox>
+            <Button Width="96" Height="25" Click="Button_Click">Carica</Button>
+        </StackPanel>
+        <TextBlock  Grid.Column="1"   Name="trvAziende" Grid.Row="1" TextWrapping="Wrap" > 
             
-        </TreeView>
+        </TextBlock>
     </Grid>
 </Window>

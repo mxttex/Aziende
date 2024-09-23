@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aziende.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,13 @@ namespace Aziende
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            FileInteraction fl = new FileInteraction("food");
+            fl.Load();
+            trvAziende.Text = fl.Content;
+        }
+
     }
 }
