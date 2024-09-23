@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TreeView BorderBrush="Black" BorderThickness="5" Name="trvAziende"> 
+            
+        </TreeView>
     </Grid>
 </Window>
