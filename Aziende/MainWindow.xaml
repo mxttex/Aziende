@@ -21,8 +21,11 @@
             <TextBox Name="tbxName" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" Width="200" Margin="20, 0"></TextBox>
             <Button Width="96" Height="25" Click="Button_Click">Carica</Button>
         </StackPanel>
-        <TextBlock  Grid.Column="1"   Name="trvAziende" Grid.Row="1" TextWrapping="Wrap" > 
+        <TextBlock  Grid.Column="0"   Name="tbkAziende" Grid.Row="1" TextWrapping="Wrap" > 
             
-        </TextBlock>
+        </TextBlock> 
+        <TreeView  Grid.Column="1"   Name="trvAziende" Grid.Row="1"  > 
+            
+        </TreeView>
     </Grid>
 </Window>

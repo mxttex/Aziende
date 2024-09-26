@@ -22,13 +22,22 @@ namespace Aziende.Models
 
         public void Load()
         {
+            //metodo che carica in content tutto il contenuto del file
             StreamReader streamReader = new StreamReader($"{FileName}.xml");
             Content = streamReader.ReadToEnd();
         }  
         public void Load(string name)
         {
+            //stessa cosa, ma ti permette di caricare un file diverso
             FileName = name;
             Load();
+        }
+
+        public XmlDocument LoadData()
+        {
+            XmlDocument document = new XmlDocument();
+            document.LoadXml($"{FileName}.xml" );
+            return document;
         }
 
 

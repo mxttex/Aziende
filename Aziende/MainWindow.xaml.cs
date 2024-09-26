@@ -30,7 +30,11 @@ namespace Aziende
         {
             FileInteraction fl = new FileInteraction("food");
             fl.Load();
-            trvAziende.Text = fl.Content;
+            tbkAziende.Text = fl.Content;
+
+            trvAziende.ItemsSource = fl.LoadData();
+
+            
         }
 
     }
