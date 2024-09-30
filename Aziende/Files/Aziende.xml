@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<aziende>
+	<azienda>
+		<nome>Beth International Pte. Ltd</nome>
+		<indirizzo>
+			<via>7702 Brief Lane</via>
+			<città>Sacramento</città>
+			<stato>Illinois</stato>
+			<cap>CO60788</cap>
+		</indirizzo>
+		<ceo>Lynnette Troy</ceo>
+		<dataCreazione>2016-07-02</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Walking Corp</nome>
+		<indirizzo>
+			<via>7458 Ainsley Street</via>
+			<città>Thornton</città>
+			<stato>Virginia</stato>
+			<cap>WY41854</cap>
+		</indirizzo>
+		<ceo>Melvin Desjardins</ceo>
+		<dataCreazione>2012-04-26</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Alliance Holdings Corp</nome>
+		<indirizzo>
+			<via>8992 Ingle Avenue</via>
+			<città>Palm Springs</città>
+			<stato>Texas</stato>
+			<cap>RI96134</cap>
+		</indirizzo>
+		<ceo>Reda Slagle</ceo>
+		<dataCreazione>1993-05-13</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Endif International A.G</nome>
+		<indirizzo>
+			<via>9732 Keswick</via>
+			<città>Tempe</città>
+			<stato>Oregon</stato>
+			<cap>KS12430</cap>
+		</indirizzo>
+		<ceo>Timika Villarreal</ceo>
+		<dataCreazione>1991-09-07</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Scheduling Mutual </nome>
+		<indirizzo>
+			<via>5245 Fearnhead Circle</via>
+			<città>Port Orange</città>
+			<stato>Washington</stato>
+			<cap>NC86886</cap>
+		</indirizzo>
+		<ceo>Monserrate Krebs</ceo>
+		<dataCreazione>1992-09-14</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Exchange Industries LLC</nome>
+		<indirizzo>
+			<via>9580 Bank</via>
+			<città>Raleigh</città>
+			<stato>Tennessee</stato>
+			<cap>TN24593</cap>
+		</indirizzo>
+		<ceo>Williemae Gary</ceo>
+		<dataCreazione>1996-09-22</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Borough Energy Corp</nome>
+		<indirizzo>
+			<via>4812 Highbury Road</via>
+			<città>Washington</città>
+			<stato>Illinois</stato>
+			<cap>OK08871</cap>
+		</indirizzo>
+		<ceo>Jazmine Mason</ceo>
+		<dataCreazione>1984-06-25</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Refinance Industries LLC</nome>
+		<indirizzo>
+			<via>6763 Windsor</via>
+			<città>Waterbury</città>
+			<stato>Montana</stato>
+			<cap>CT12544</cap>
+		</indirizzo>
+		<ceo>Martin Foss</ceo>
+		<dataCreazione>2001-07-07</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Richmond Mutual LLC</nome>
+		<indirizzo>
+			<via>7400 Nethercote Avenue</via>
+			<città>Rochester</città>
+			<stato>New York</stato>
+			<cap>ID35552</cap>
+		</indirizzo>
+		<ceo>Herminia Everhart</ceo>
+		<dataCreazione>2021-07-27</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Ye Software </nome>
+		<indirizzo>
+			<via>6115 Second</via>
+			<città>Santa Ana</città>
+			<stato>Michigan</stato>
+			<cap>TX32660</cap>
+		</indirizzo>
+		<ceo>Trudie Mcmurray</ceo>
+		<dataCreazione>1975-03-06</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Sample International Corp</nome>
+		<indirizzo>
+			<via>3130 Howgill Road</via>
+			<città>North Port</città>
+			<stato>Maine</stato>
+			<cap>HI55201</cap>
+		</indirizzo>
+		<ceo>Jerilyn Withrow</ceo>
+		<dataCreazione>1988-02-16</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Reef Software GmbH</nome>
+		<indirizzo>
+			<via>3080 Leslie Road</via>
+			<città>Davidson County</città>
+			<stato>Ohio</stato>
+			<cap>WI33167</cap>
+		</indirizzo>
+		<ceo>Roberto Courtney</ceo>
+		<dataCreazione>1999-06-16</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Snow Industries </nome>
+		<indirizzo>
+			<via>9337 Burnsall Circle</via>
+			<città>Buffalo</città>
+			<stato>New Hampshire</stato>
+			<cap>MN54191</cap>
+		</indirizzo>
+		<ceo>Rosa Mahaffey</ceo>
+		<dataCreazione>2010-07-27</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Hardcover Mutual </nome>
+		<indirizzo>
+			<via>9341 Shelburne</via>
+			<città>West Covina</città>
+			<stato>Maine</stato>
+			<cap>AZ16687</cap>
+		</indirizzo>
+		<ceo>Isabel Soria</ceo>
+		<dataCreazione>1971-04-21</dataCreazione>
+	</azienda>
+	<azienda>
+		<nome>Fuel </nome>
+		<indirizzo>
+			<via>0293 Maze Street</via>
+			<città>Odessa</città>
+			<stato>Nebraska</stato>
+			<cap>NV91770</cap>
+		</indirizzo>
+		<ceo>Delisa Weinberg</ceo>
+		<dataCreazione>1998-10-29</dataCreazione>
+	</azienda>
+</aziende>

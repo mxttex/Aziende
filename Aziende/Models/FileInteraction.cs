@@ -25,7 +25,7 @@ namespace Aziende.Models
         public void Load()
         {
             //metodo che carica in content tutto il contenuto del file
-            StreamReader streamReader = new StreamReader($"{FileName}.xml");
+            StreamReader streamReader = new StreamReader(FileName);
             Content = streamReader.ReadToEnd();
         }  
         public void Load(string name)
@@ -39,7 +39,7 @@ namespace Aziende.Models
         {
             XmlDocument document = new XmlDocument();
             
-            document.Load($"{FileName}.xml" );
+            document.Load(FileName);
             return document.DocumentElement;
         }
 

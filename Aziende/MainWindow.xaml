@@ -19,15 +19,15 @@
             <ColumnDefinition Width="0.5*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Center">Gestione File Xml</TextBlock>
-        <StackPanel HorizontalAlignment="Center" Grid.Row="0" Orientation="Horizontal" Grid.Column="1">
+        <StackPanel HorizontalAlignment="Center" Grid.Row="0" Orientation="Horizontal" Grid.Column="1" Grid.ColumnSpan="2">
             <Label>Inserire Nome File:</Label>
-            <TextBox Name="tbxName" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" Width="200" Margin="20, 0"></TextBox>
-            <Button Width="96" Height="25" Click="Button_Click">Carica</Button>
+            <!--<TextBox Name="tbxName" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" Width="200" Margin="20, 0"></TextBox>-->
+            <Button Width="96" Height="25" Click="Button_Click">Carica File</Button>
         </StackPanel>
-        <TextBlock  Grid.Column="0"   Name="tbkAziende" Grid.Row="1" TextWrapping="Wrap" > 
+        <TextBox  Grid.Column="1"   Name="tbkAziende" Grid.Row="1" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" BorderThickness="1"> 
             
-        </TextBlock> 
-        <TreeView  Grid.Column="1"   Name="trvAziende" Grid.Row="1"  > 
+        </TextBox> 
+        <TreeView  Grid.Column="2"   Name="trvAziende" Grid.Row="1"  > 
             
         </TreeView>
     </Grid>

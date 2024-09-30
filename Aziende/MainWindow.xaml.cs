@@ -1,4 +1,5 @@
 ﻿using Aziende.Models;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,25 +30,29 @@ namespace Aziende
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
+            string filePath = string.Empty;
+            FileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Documenti Xml (*, xml) | *.xml";
+            if (openFileDialog.ShowDialog() == true)
             {
-                FileInteraction fl = new FileInteraction(tbxName.Text);
+                //Get the path of specified file
+                filePath = openFileDialog.FileName;
+                FileInteraction fl = new FileInteraction(filePath);
                 fl.Load();
                 tbkAziende.Text = fl.Content;
                 trvAziende.Items.Clear();
-                TreeViewItem root = new TreeViewItem() { Header = tbxName.Text };
+                TreeViewItem root = new TreeViewItem() { Header = filePath};
                 trvAziende.Items.Add(root);
 
 
                 fl.addTreeNode(fl.LoadData(), root);
             }
-            catch 
-            {
-                MessageBox.Show("Errore nella ricerca del file", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
             
-            
+
         }
+
 
     }
 }
+
+
