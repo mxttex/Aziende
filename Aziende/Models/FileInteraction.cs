@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 using System.Xml;
 
 namespace Aziende.Models
@@ -33,15 +35,37 @@ namespace Aziende.Models
             Load();
         }
 
-        public XmlDocument LoadData()
+        public XmlElement LoadData()
         {
             XmlDocument document = new XmlDocument();
-            document.LoadXml($"{FileName}.xml" );
-            return document;
+            
+            document.Load($"{FileName}.xml" );
+            return document.DocumentElement;
+        }
+
+        public void addTreeNode(XmlNode xmlNode, TreeViewItem treeNode)
+        {
+            XmlNode xNode;
+            TreeViewItem tNode;
+            XmlNodeList xNodeList;
+
+            if (xmlNode.HasChildNodes)
+            {
+                xNodeList = xmlNode.ChildNodes;
+                for (int x = 0; x <= xNodeList.Count - 1; x++)
+                {
+                    xNode = xmlNode.ChildNodes[x];
+                    int i = treeNode.Items.Add(new TreeViewItem() { Header = xNode.Name });
+
+                    tNode = treeNode.Items[x] as TreeViewItem;
+                    addTreeNode(xNode, tNode);
+                }
+            }
+            else treeNode.Header = xmlNode.OuterXml.Trim();
         }
 
 
 
-        
+
     }
 }

@@ -8,12 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
             <RowDefinition Height="6.5*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.75*"></ColumnDefinition>
+            <ColumnDefinition Width="2.5*"></ColumnDefinition>
             <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Center">Gestione File Xml</TextBlock>
         <StackPanel HorizontalAlignment="Center" Grid.Row="0" Orientation="Horizontal" Grid.Column="1">

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace Aziende
 {
@@ -28,12 +29,23 @@ namespace Aziende
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            FileInteraction fl = new FileInteraction("food");
-            fl.Load();
-            tbkAziende.Text = fl.Content;
+            try
+            {
+                FileInteraction fl = new FileInteraction(tbxName.Text);
+                fl.Load();
+                tbkAziende.Text = fl.Content;
+                trvAziende.Items.Clear();
+                TreeViewItem root = new TreeViewItem() { Header = tbxName.Text };
+                trvAziende.Items.Add(root);
 
-            trvAziende.ItemsSource = fl.LoadData();
 
+                fl.addTreeNode(fl.LoadData(), root);
+            }
+            catch 
+            {
+                MessageBox.Show("Errore nella ricerca del file", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            
             
         }
 
